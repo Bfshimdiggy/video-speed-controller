@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Video Speed Controller",
+    "description": "Control playback speed of videos on any website.",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
